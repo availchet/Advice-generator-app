@@ -1,0 +1,115 @@
+/****************************
+ * Common Styles            *
+ ****************************/
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #212632;
+    color: #d1e1ea;
+    display: flex;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+/****************************
+ * Phrase App Styles        *
+ ****************************/
+.phrase-container {
+    width: 95%;
+    max-width: 650px;
+    background-color: #303a49;
+    border: 1px solid #323946;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #202531;
+}
+
+.phrase-container-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4em 4em 0;
+    position: relative;
+}
+
+.phrase-title {
+    color: #67d0a5;
+    text-transform: uppercase;
+    font-weight: 550;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2em;
+}
+
+.phrase {
+    color: #d1e1ea;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+.phrase-author {
+    color: #d1e1ea;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 2em;
+}
+
+.footer-main {
+    border-top: 1px solid #414b5a;
+    padding: 2em 0;
+    margin: 40px 0 0;
+    font-size: 1.3rem;
+    color: #cde2eb;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    content: " ";
+}
+
+.footer-main:before {
+    display: block;
+    content: ' ';
+    width: 7px;
+    height: 16px;
+    border-right: 4px solid #fff;
+    border-left: 4px solid #fff;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    margin-left: -5px;
+    background: #303a49;
+    box-shadow: #303a49 0 0 0 5px;
+    border-radius: 1px;
+}
+
+.refresh-button {
+    content: ' ';
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    border: 1px solid #16453e;
+    background-color: #54fead;
+    position: absolute;
+    bottom: -3em;
+    left: calc(50% - 3em);
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.refresh-button:active {
+    box-shadow: 0 0 4em #54fead;
+}
+
+.refresh-icon {
+    width: 3em;
+    height: 3em;
+    background: url(/images/icon-dice.svg) no-repeat left center;
+    padding: 2em 0 2em 2em;
+}
